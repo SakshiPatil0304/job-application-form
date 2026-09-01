@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Job Application Form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -18,22 +19,24 @@
 
     <main>
 
-        <form action="success.html">
+        <form action="success.html" id="jobForm">
 
             <h2>Personal Information</h2>
 
             <label>Name:</label>
-            <input type="text" placeholder="Enter your name" required>
-
+            <input type="text" id="fullName" placeholder="Enter your name" required>
+            <span class="error" id="nameError"></span>
             <br><br>
 
             <label>Email:</label>
-            <input type="email" placeholder="Enter your email" required>
-
+            <input type="email" id="email" placeholder="Enter your email" required>
+            <span class="error" id="emailError"></span>
+ 
             <br><br>
 
             <label>Phone:</label>
-            <input type="tel" placeholder="Enter your phone number" required>
+            <input type="tel" id="phone" placeholder="Enter your phone number" required>
+            <span class="error" id="phoneError"></span>
 
             <br><br>
 
@@ -41,7 +44,7 @@
 
             <label>Position:</label>
 
-            <select required>
+            <select id="position"  required>
                 <option>Java Developer</option>
                 <option>Frontend Developer</option>
                 <option>Backend Developer</option>
@@ -52,7 +55,7 @@
 
             <label>Experience:</label>
 
-            <select required>
+            <select id="experience" required>
                 <option>Fresher</option>
                 <option>1-2 Years</option>
                 <option>2-5 Years</option>
@@ -64,31 +67,36 @@
             <label>Skills:</label>
             <br>
 
-            <input type="checkbox"> Java
-            <input type="checkbox"> HTML
-            <input type="checkbox"> CSS
-            <input type="checkbox"> JavaScript
-            <input type="checkbox"> Spring Boot
-            <input type="checkbox"> MySQL
+            <input type="checkbox" class="skill"> Java
+            <input type="checkbox" class="skill"> HTML
+            <input type="checkbox" class="skill"> CSS
+            <input type="checkbox" class="skill"> JavaScript
+            <input type="checkbox" class="skill"> Spring Boot
+            <input type="checkbox" class="skill"> MySQL
             
+            <span class="error" id="skillsError"></span>
 
             <br><br>
 
             <h2>Resume</h2>
 
-            <input type="file" required>
+            <input type="file" id="resume" required>
+            <span class="error" id="resumeError"></span>
 
             <br><br>
 
             <label>Why should we hire you?</label>
             <br>
 
-            <textarea rows="5" cols="40"></textarea>
+            <textarea id="message" rows="5" cols="40" required></textarea>
+            <span class="error" id="messageError"></span>
 
             <br><br>
 
-            <input type="checkbox" required>
+            <input type="checkbox" id="term" required>
             I agree to the terms and conditions.
+
+            <span class="error" id="termsError"></span>
 
             <br><br>
 
@@ -105,6 +113,7 @@
         <p>Created by Sakshi Patil</p>
     </footer>
 
+    <script src="app.js"></script>
 </body>
 
 </html>

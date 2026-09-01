@@ -1,0 +1,163 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Header */
+header {
+    text-align: center;
+    background-color: #1f4e79;
+    color: white;
+    padding: 30px 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+/* Horizontal Line */
+hr {
+    border: none;
+    height: 1px;
+    background-color: #ddd;
+    margin: 0;
+}
+
+/* Main Section */
+main {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+/* Form */
+form {
+    width: 100%;
+    max-width: 650px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Headings */
+h2 {
+    color: #1f4e79;
+    border-bottom: 2px solid #1f4e79;
+    padding-bottom: 8px;
+    margin-top: 25px;
+}
+
+/* Labels */
+label {
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 6px;
+}
+
+/* Text Inputs and Select */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 11px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+/* Input Focus */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #1f4e79;
+    box-shadow: 0 0 5px rgba(31, 78, 121, 0.2);
+}
+
+/* Textarea */
+textarea {
+    resize: vertical;
+}
+
+/* File Input */
+input[type="file"] {
+    margin-top: 8px;
+    padding: 8px;
+}
+
+/* Checkboxes */
+input[type="checkbox"] {
+    margin-right: 5px;
+    accent-color: #1f4e79;
+}
+
+/* Apply Button */
+button {
+    width: 100%;
+    padding: 13px;
+    background-color: #1f4e79;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #163a5a;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #1f4e79;
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+
+    main {
+        padding: 20px 10px;
+    }
+
+    form {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 26px;
+    }
+}
+
+.error {
+    display: block;
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
